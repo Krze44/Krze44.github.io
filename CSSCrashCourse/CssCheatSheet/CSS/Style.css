@@ -1,0 +1,232 @@
+/* resets the padding and margin for everything including heading
+        *{
+            margin:0;
+            padding:0;
+      }                   */
+
+body{
+    background-color: #f4f4f4;
+    color:#555555;
+
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* same as above */
+    font: normal 16px, Arial, helvetica, sans-serif;
+    /* "x-em" is standard for line-height */
+    line-height: 1.4em;
+    margin:0;
+}
+  /* use a period (".") to refer to a class */
+  /* when you make a container div you want to use % for the width */
+
+  /* margin & padding shorthand vs long, applies to both margin & padding  */
+  /* p{                               p{           "top""right""bottom""left"
+          margin-top:5px;                   margin: 5px 10px 5px 10px;
+          margin-bottom:5p;             }
+          margin-right:10px;
+          margin-left:10px;           P{
+                                            marign: 5px 10px;
+                                      }
+    }                                                         */
+/* long you must define what you want each one to be, 2nd shortest for when each one must be different
+    shortest when two sides can be same size */
+/*you need to use "." or a period when editing a class */
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+  color:green;
+}
+
+a:visited{
+
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-color: #333;
+}
+/* states can be added to buttons just like links using :hover/visited etc */
+.button:hover{
+    background: red;
+    color: white;
+  }
+
+.clr{
+  clear:both;
+}
+
+.box-1{
+  /* #333333 can be shortened to #333 as a hexadecimal */
+    background-color: #333;
+    color: #fff;
+
+    border-right: 5px red solid;
+    border-left:5px red solid;
+    border-top:5px red solid;
+    border-bottom:5px red solid;
+    /* same as above */
+
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /* border styles: solid, double, dashed, dotted */
+
+    border: 5px red solid;
+
+    padding-top: 20px;
+    padding-bottom: : 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /*same as above */
+    padding:20px;
+
+    margin-top:20px;
+    margin:20px 0;
+
+  }
+/* styles the h1 within the class 'box-1' */
+.box-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+}
+
+.box-2{
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0
+}
+
+.categories{
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .categories h2{
+    text-align: center;
+  }
+
+.categories ul{
+    padding:0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image:url('../images/check.png');
+  }
+
+
+.my-form{
+    padding:20px;
+}
+
+.my-form .form-group{ /* this form-group refers to the set of div's in the form */
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block;
+}
+/* you can list multiple classes for you what you want done to it, adding [type="text"]
+   will only include anything with the "text" "type" label for that class, until you add a comma ',' */
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{ /* if a box is too big you can use "box-sizing" with the value of "border-box" to account for everything above */
+    float: left;
+    width: 33.33%;
+    border:1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+#main-block{
+  float:left;
+  width: 70%;
+  padding:15px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+    float:left;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding:15px;
+    box-sizing: border-box;
+}
+/* to add an image outside the css folder you must add "../"fodlder name"/"image name" */
+.p-box{
+    width:800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bgimage.jpg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* using absolute without a relative position for it to base off of
+   will cause it to use the entire html as the "relative" or container */
+.p-box h1{
+  position: absolute;
+  top:100px;
+  left: 200px;
+}
+
+
+.p-box h2{
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+/* you can use a : after your target creates a psuedo-class
+   i.e "first-child", "last-child" */
+/* For a specific "child" you can use "ex:nth-child(1, 2, 3)" or add, an odd/even in the "()"  */ 
+.my-list li:last-child{
+  background: blue;
+}
+
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: grey;
+}

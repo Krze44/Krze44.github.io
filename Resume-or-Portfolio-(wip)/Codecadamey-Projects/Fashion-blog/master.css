@@ -1,0 +1,167 @@
+*{
+  font-family: Tahoma, helvectica, sans-serif;
+  background-color: #f4f4f4;
+  margin: 5px 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NYFW{
+  text-decoration: none;
+  background-color:black;
+  color:white;
+ 
+}
+
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container h1{
+  min-width: 600px;
+  width:70%;
+  float:left;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  word-spacing: 0.2em;
+  text-align: center;
+}
+
+
+
+.container h4{
+  min-width: 600px;
+  width: 70%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  word-spacing: 0.2em;
+  text-align: center;
+}
+
+
+
+.First-Post{
+    width: 68% ;
+    min-width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+ span{
+  font-size: 11px; 
+  box-sizing: border-box;
+  margin-top: 30px;
+  
+}
+
+
+.Second-Post{
+  text-align:center;
+  width: 68%;
+  min-width: 600px;
+}
+
+.container p{
+  min-width: 600px;
+    float:left;
+    width:70%;
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 1.6em;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.First-Image{
+    height: 150px;
+    margin: 10px;
+    float:right;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+   
+    
+}
+
+.Second-Image{
+  height: 150px;
+    float:right;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+}
+
+.Third-Image{
+  height: 150px;
+    float:right;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    
+    
+}
+
+.Selfie{
+  float:left;
+  height: 90px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 0 0 150px;
+}
+
+
+
+.List a{
+    text-decoration:none;
+    color:black;
+}
+
+a:hover{
+    color:purple;
+}
+
+li{
+   list-style-image: url('check.png');
+   line-height: 1.6em;
+
+}
+
+.Contact{
+  width: 750px;
+  margin: 0 auto;
+  min-width: 750px;
+}
+
+
+@media (max-width:1080px) {
+  *{
+    float:none;
+    position: static;
+  }
+ .NYFW{
+  text-align: center;
+  }
+  .First-Image, .Second-Image, .Third-Image{
+    float:left;
+  }
+  .contianer p{
+    width: 100%;
+  }
+ li{
+  line-height: normal;
+  list-style-image: none;
+ }
+ 
+}

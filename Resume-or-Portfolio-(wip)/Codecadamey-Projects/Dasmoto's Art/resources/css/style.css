@@ -1,0 +1,40 @@
+* {
+  font-family: Helvetica;
+}
+
+body header {
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+  background-image: url("../images/pattern.jpeg");
+  margin: 75px 0;
+}
+
+#brushes {
+  background-color: mediumspringgreen;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.price {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: blue;
+}
+
+.frames h1 {
+  background-color: lightcoral;
+}
+
+.Bottles h1 {
+  background-color: skyblue;
+}
