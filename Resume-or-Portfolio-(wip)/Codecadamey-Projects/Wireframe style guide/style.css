@@ -1,0 +1,125 @@
+/*General Changes */
+
+* {
+  box-sizing: border-box !important;
+ 
+  
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section,
+#font-styles section {
+  border: 1px solid white;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  box-shadow: 3px 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+html {
+  background-color: #001830;
+  color: #cc5050;
+}
+
+h4 {
+  font-family: "Fira Sans";
+}
+
+h2 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Space Mono";
+}
+
+li {
+  font-family: "Nunito";
+}
+
+ul{
+  padding: 0;
+}
+
+/* FONT-STYLES PORTION */
+
+
+.top-right-style,
+.bottom-right-style {
+  float: right;
+  width: 50%;
+}
+
+.top-left-style,
+.bottom-left-style {
+  float: left;
+  width: 50%;
+}
+
+#font-styles {
+  height: 380px;
+}
+
+.top-right-style h2,
+.top-left-style h2 {
+  text-decoration: none;
+}
+
+#font-styles span {
+  font-style: italic;
+}
+
+#font-styles p,
+span {
+  line-height: 1.4;
+}
+
+/* Font Section */
+.Nunito {
+  font-family: "Nunito";
+}
+
+.Fira-Sans {
+  font-family: "Fire-Sans";
+}
+
+.Space-Mono {
+  font-family: "Space Mono";
+}
+
+.top-left-font {
+  float: left;
+  width: 50%;
+}
+
+.top-right-font {
+  float: right;
+  width: 50%;
+}
+
+.bottom-font {
+  width: 100%;
+}
+
+#fonts h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#fonts p {
+  font-size: 16px;
+}
